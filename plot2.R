@@ -13,7 +13,7 @@ plot2 <- function(fname) {
     data <- subset(alldata, Timestamp >=startDate & Timestamp < endDate)
     
     # open the target file
-    png(filename = "plot2.png", width = 480, height = 480)
+    png(filename = "plot2.png", width = 480, height = 480, bg = "transparent")
     
     # create the plot
     plot(data$Timestamp, data$Global_active_power, 

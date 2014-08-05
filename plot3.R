@@ -15,7 +15,7 @@ plot3 <- function(fname) {
     data <- subset(alldata, Timestamp >=startDate & Timestamp < endDate)
     
     # open the target file
-    png(filename = "plot3.png", width = 480, height = 480)
+    png(filename = "plot3.png", width = 480, height = 480, bg = "transparent")
     
     # create the plot with the first line
     with(data, plot(Timestamp, Sub_metering_1, ylab = "Energy sub metering", xlab="", type="l"))

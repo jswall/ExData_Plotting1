@@ -16,7 +16,7 @@ plot1 <- function(fname) {
     data <- subset(alldata, Date >=startDate & Date <= endDate)
 
     # open the target file
-    png(filename = "plot1.png", width = 480, height = 480)
+    png(filename = "plot1.png", width = 480, height = 480, bg = "transparent")
     
     # create the histogram
     hist(data$Global_active_power, 
