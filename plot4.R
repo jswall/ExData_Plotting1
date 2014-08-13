@@ -38,7 +38,7 @@ plot4 <- function(fname) {
     legend("topright", bty="n", lwd=1, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     
     # create the fourth plot - Global Reactive Power
-    with(dta4, plot(Timestamp, Global_reactive_power, xlab="datetime", type="l"))
+    with(data, plot(Timestamp, Global_reactive_power, xlab="datetime", type="l"))
     
     # close the file
     dev.off()
