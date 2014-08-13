@@ -26,7 +26,7 @@ plot4 <- function(fname) {
                     xlab="", type="l"))
     
     # create the second plot - Voltage
-    with(dta4, plot(Timestamp, Voltage, xlab="datetime", ylab="Voltage", type="l"))
+    with(data, plot(Timestamp, Voltage, xlab="datetime", ylab="Voltage", type="l"))
     
     # create the third plot - sub metering, first line
     with(data, plot(Timestamp, Sub_metering_1, ylab = "Energy sub metering", xlab="", type="l"))
